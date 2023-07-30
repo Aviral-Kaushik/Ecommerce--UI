@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.WelcomeActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/ic_logo_circle"
+        android:layout_marginTop="24dp"
+        android:rotation="35"
+        android:contentDescription="@string/kur_e_shop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textVie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/zevon"
+        android:textColor="#89E581"
+        android:textSize="49sp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aguafina_script"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="@id/imageView"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"/>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/kur_e_shop"
+        android:textColor="#89E581"
+        android:textSize="37sp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/aguafina_script"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="@id/imageView"
+        app:layout_constraintTop_toBottomOf="@id/imageView"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:rotation="35"
+        app:srcCompat="@drawable/ic_welcome_main"
+        android:contentDescription="@string/kur_e_shop"
+        app:layout_constraintStart_toStartOf="@id/textView"
+        app:layout_constraintEnd_toEndOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView2"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/btn_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="12dp"
+            android:padding="8dp"
+            android:background="@drawable/btn_sign_in_background">
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:rotation="36"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@string/sign_in1"
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/ic_sign_up" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/sign_up"
+                android:gravity="start|center"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="21sp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btn_log_in"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@drawable/btn_log_in_background">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:rotation="36"
+                android:layout_marginEnd="4dp"
+                android:contentDescription="@string/sign_in1"
+                android:foregroundGravity="center"
+                app:srcCompat="@drawable/ic_login" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/sign_in1"
+                android:gravity="start|center"
+                android:layout_marginStart="4dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="21sp"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.ModifyExistingProductActivity">
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_products"
+        android:textColor="@color/black"
+        android:fontFamily="@font/quicksand_bold"
+        android:textSize="21sp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="#757575"
+        android:fontFamily="@font/quicksand_medium"
+        android:textSize="14sp"
+        android:text="@string/list_of_all_your_uploaded_products"
+        app:layout_constraintStart_toStartOf="@id/textView49"
+        app:layout_constraintTop_toBottomOf="@id/textView49"/>
+
+    <View
+        android:id="@+id/divider10"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:background="#c1c1c1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/textView50"
+        app:layout_constraintEnd_toEndOf="@id/textView50"
+        app:layout_constraintTop_toBottomOf="@id/textView50"/>
+
+    <TextView
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/btn_discard_background"
+        android:fontFamily="@font/quicksand_bold"
+        android:paddingStart="10dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="4dp"
+        android:text="@string/close"
+        android:textColor="#FF0000"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/textView49"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textView49" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/modify_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider10"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
